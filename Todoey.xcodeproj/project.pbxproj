@@ -13,6 +13,7 @@
 		5D79022D21DFDC640083D9CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D79022B21DFDC640083D9CF /* Main.storyboard */; };
 		5D79022F21DFDC670083D9CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D79022E21DFDC670083D9CF /* Assets.xcassets */; };
 		5D79023221DFDC670083D9CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D79023021DFDC670083D9CF /* LaunchScreen.storyboard */; };
+		5DDF331D21E25B09001FD50B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DDF331C21E25B09001FD50B /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5D79022E21DFDC670083D9CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D79023121DFDC670083D9CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D79023321DFDC670083D9CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DDF331C21E25B09001FD50B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CF760F41982ACCDB359A8619 /* Pods_Todoey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Todoey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F704586FC282A90578A8E79E /* Pods-Todoey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todoey.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Todoey/Pods-Todoey.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,14 +71,47 @@
 		5D79022621DFDC640083D9CF /* Todoey */ = {
 			isa = PBXGroup;
 			children = (
-				5D79022721DFDC640083D9CF /* AppDelegate.swift */,
-				5D79022921DFDC640083D9CF /* TodoListViewController.swift */,
-				5D79022B21DFDC640083D9CF /* Main.storyboard */,
-				5D79022E21DFDC670083D9CF /* Assets.xcassets */,
-				5D79023021DFDC670083D9CF /* LaunchScreen.storyboard */,
 				5D79023321DFDC670083D9CF /* Info.plist */,
+				5D79022721DFDC640083D9CF /* AppDelegate.swift */,
+				5DDF331A21E25AE6001FD50B /* Controllers */,
+				5DDF331B21E25AF5001FD50B /* Views */,
+				5DDF331F21E25B38001FD50B /* Support Files */,
+				5DDF331E21E25B2B001FD50B /* Models */,
 			);
 			path = Todoey;
+			sourceTree = "<group>";
+		};
+		5DDF331A21E25AE6001FD50B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5D79022921DFDC640083D9CF /* TodoListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5DDF331B21E25AF5001FD50B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5D79022B21DFDC640083D9CF /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5DDF331E21E25B2B001FD50B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5DDF331C21E25B09001FD50B /* Item.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5DDF331F21E25B38001FD50B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D79022E21DFDC670083D9CF /* Assets.xcassets */,
+				5D79023021DFDC670083D9CF /* LaunchScreen.storyboard */,
+			);
+			path = "Support Files";
 			sourceTree = "<group>";
 		};
 		97DEEFBD87B1BB384DD07178 /* Pods */ = {
@@ -211,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D79022A21DFDC640083D9CF /* TodoListViewController.swift in Sources */,
+				5DDF331D21E25B09001FD50B /* Item.swift in Sources */,
 				5D79022821DFDC640083D9CF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +397,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6W5Z52T6EJ;
 				INFOPLIST_FILE = Todoey/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,6 +417,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6W5Z52T6EJ;
 				INFOPLIST_FILE = Todoey/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
